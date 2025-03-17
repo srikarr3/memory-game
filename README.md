@@ -15,7 +15,7 @@ A modern, responsive memory card game built with React and Firebase, featuring a
 
 ## 🚀 Live Demo
 
-[Play the game](your-vercel-deployment-url) - Deployed on Vercel
+[Play the game](https://memory-game-psi-plum.vercel.app/welcome) - Deployed on Vercel
 
 ## 🛠️ Technologies Used
 

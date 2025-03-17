@@ -1,0 +1,141 @@
+.leaderboard-container {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 0 auto 40px;
+}
+
+.leaderboard-heading {
+  color: #1a73e8;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  background: linear-gradient(135deg, #1a73e8, #0d47a1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.leaderboard-table-container {
+  overflow-x: auto;
+  margin: 0 -20px;
+  padding: 0 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  table-layout: fixed;
+}
+
+th {
+  background: #f8f9fa;
+  color: #1a73e8;
+  font-weight: 600;
+  padding: 16px;
+  text-align: center;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+td {
+  padding: 16px;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Column widths */
+th:nth-child(1), td:nth-child(1) { width: 10%; } /* Rank */
+th:nth-child(2), td:nth-child(2) { width: 30%; } /* Player */
+th:nth-child(3), td:nth-child(3) { width: 20%; } /* Difficulty */
+th:nth-child(4), td:nth-child(4) { width: 15%; } /* Moves */
+th:nth-child(5), td:nth-child(5) { width: 10%; } /* Time */
+th:nth-child(6), td:nth-child(6) { width: 15%; } /* Date */
+
+tr:hover {
+  background-color: #f8f9fa;
+}
+
+.difficulty-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.difficulty-badge.Easy {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.difficulty-badge.Medium {
+  background-color: #fff3e0;
+  color: #f57c00;
+}
+
+.difficulty-badge.Hard {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.rank-cell {
+  font-weight: 600;
+  color: #1a73e8;
+}
+
+.rank-1 {
+  color: #ffd700;
+}
+
+.rank-2 {
+  color: #c0c0c0;
+}
+
+.rank-3 {
+  color: #cd7f32;
+}
+
+@media (max-width: 768px) {
+  .leaderboard-container {
+    padding: 20px;
+    margin: 0 10px 20px;
+  }
+
+  .leaderboard-heading {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  th, td {
+    padding: 12px 8px;
+    font-size: 0.9rem;
+  }
+
+  .difficulty-badge {
+    padding: 4px 8px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .leaderboard-container {
+    padding: 15px;
+  }
+
+  .leaderboard-heading {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  th, td {
+    padding: 8px 4px;
+    font-size: 0.8rem;
+  }
+}
+  

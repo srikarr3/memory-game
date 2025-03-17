@@ -35,7 +35,7 @@ A modern, responsive memory card game built with React and Firebase, featuring a
 
 1. **Clone the repository**
    ```bash
-   git clone your-repository-url
+   git clone https://github.com/srikarr3/memory-game.git
    cd memory-game
    ```
 
@@ -114,7 +114,7 @@ A modern, responsive memory card game built with React and Firebase, featuring a
 ## 👤 Author
 
 Srikar
-- GitHub: [@yourusername](https://github.com/srikarr3)
+- GitHub: [@srikarr3](https://github.com/srikarr3)
 
 ## 🌟 Acknowledgments
 

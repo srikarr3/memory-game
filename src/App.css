@@ -459,75 +459,196 @@
   background: #1a1a2e;
 }
 
-/* Responsive adjustments */
+/* Enhanced Responsive Styles */
+@media (max-width: 1024px) {
+  .app-header h1 {
+    font-size: 2.8em;
+  }
+
+  .welcome-content {
+    padding: 3rem;
+    margin: 60px auto;
+  }
+
+  .welcome-content h1 {
+    font-size: 3rem;
+  }
+
+  .welcome-buttons {
+    gap: 1.5rem;
+  }
+}
+
 @media (max-width: 768px) {
-  .app-header,
-  .board,
-  .leaderboard {
-    width: 95%;
-    padding: 20px;
+  .App {
+    padding: 15px;
+  }
+
+  .app-header h1 {
+    font-size: 2.4em;
+  }
+
+  .welcome-content {
+    padding: 2.5rem;
+    margin: 40px auto;
+  }
+
+  .welcome-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .welcome-content p {
+    font-size: 1.2rem;
+    max-width: 90%;
+  }
+
+  .welcome-buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .welcome-buttons .auth-button {
+    width: 100%;
+    max-width: 280px;
+    padding: 14px 30px;
+    font-size: 1.1rem;
+  }
+
+  .controls {
+    gap: 15px;
+  }
+
+  .controls button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
   }
 
   .cards-grid {
+    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     padding: 10px;
+    max-width: 400px;
+  }
+
+  .card {
+    width: 80px;
+    height: 80px;
+  }
+
+  .restart-button {
+    padding: 12px 28px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .App {
+    padding: 10px;
+  }
+
+  .app-header h1 {
+    font-size: 2em;
+  }
+
+  .user-controls {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .welcome-content {
+    padding: 2rem;
+    margin: 30px auto;
+  }
+
+  .welcome-content h1 {
+    font-size: 2rem;
+  }
+
+  .welcome-content p {
+    font-size: 1.1rem;
+  }
+
+  .cards-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    padding: 8px;
+    max-width: 320px;
+  }
+
+  .card {
+    width: 65px;
+    height: 65px;
+  }
+
+  .card-face {
+    font-size: 1.4rem;
+  }
+
+  .game-stats {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.1rem;
+  }
+
+  .leaderboard {
+    overflow-x: auto;
+  }
+
+  .leaderboard-table {
+    min-width: 400px;
+  }
+
+  .leaderboard h2 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .cards-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+    padding: 6px;
+    max-width: 280px;
+  }
+
+  .card {
+    width: 55px;
+    height: 55px;
+  }
+
+  .card-face {
+    font-size: 1.2rem;
+  }
+}
+
+/* Tablet-specific orientation adjustments */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .cards-grid {
+    max-width: 600px;
   }
 
   .card {
     width: 90px;
     height: 90px;
   }
-
-  .card-face {
-    font-size: 2rem;
-  }
-
-  .leaderboard h2 {
-    font-size: 1.8rem;
-  }
-
-  .leaderboard-table th,
-  .leaderboard-table td {
-    padding: 12px;
-    font-size: 0.9rem;
-  }
 }
 
-@media (max-width: 480px) {
-  .app-header,
-  .board,
-  .leaderboard {
-    width: 98%;
-    padding: 15px;
+/* Touch device optimizations */
+@media (hover: none) {
+  .card:hover .card-face {
+    box-shadow: none;
   }
 
-  .cards-grid {
-    gap: 8px;
-    padding: 8px;
+  .app-header:hover,
+  .board:hover,
+  .leaderboard:hover {
+    transform: none;
   }
 
-  .card {
-    width: 70px;
-    height: 70px;
-  }
-
-  .card-face {
-    font-size: 1.6rem;
-    border-radius: 12px;
-  }
-
-  .leaderboard h2 {
-    font-size: 1.6rem;
-  }
-
-  .leaderboard-table th,
-  .leaderboard-table td {
-    padding: 10px;
-    font-size: 0.8rem;
-  }
-
-  .game-stats {
-    font-size: 1.2rem;
+  .controls button:active,
+  .restart-button:active,
+  .welcome-buttons .auth-button:active {
+    transform: scale(0.98);
   }
 }
 
